@@ -1,4 +1,5 @@
-#REGISTRATION FORM
+# REGISTRATION FORM
+
 This is the third project from the Front End Developer Techdegree course.
 
 It entails creating a mobile and desktop responsive registration form. What I learnt in this project was the various input types and attributes when creating a form.
