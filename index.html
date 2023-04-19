@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>THE CODE REVIEW</h1>
+    </header>
+
+
+
+    <section class="container">
+        <h2>Sign up for our newsletter</h2>
+        <p>Get the latest news on how your code is doing right in your inbox</p>
+        <hr class="line1">
+        <hr class="line2">
+
+
+        <form action="index.html" method="post">
+
+            <fieldset class="fieldset1">
+                <legend>Contact Information</legend>
+
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" placeholder="required">
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="required">
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="required">
+
+                <label for="address">Street Address</label>
+                <input type="text" id="address"><br>
+
+                <label for="city">City</label>
+                <input type="text" id="city" placeholder="required"><br>
+
+                <div class="select-wrapper">
+                    <label for="state">State</label>
+                    <select name="state" id="state">
+                        <option class="option" value="states"></option>
+                        <optgroup label="Africa">
+                            <option value="kenya">Kenya</option>
+                            <option value="rwanda">Rwanda</option>
+                            <option value="egypt">Egypt</option>
+                            <option value="nigeria">Nigeria</option>
+                        </optgroup>
+
+                        <optgroup label="Europe">
+                            <option value="monaco">Monaco</option>
+                            <option value="netherlands">Netherlands</option>
+                            <option value="poland">Poland</option>
+                            <option value="germany">Germany</option>
+                        </optgroup>
+                    </select>
+                </div><br>
+
+
+
+                <label for="zipcode">Zip Code</label>
+                <input type="number" id="zipcode" placeholder="required">
+            </fieldset>
+
+            <hr>
+            <h2>Newsletter</h2>
+            <fieldset>
+                <legend> Select the newsletters you'd like to recieve</legend>
+
+                <div>
+                    <input type="checkbox" id="html">
+                    <label for="html">HTML News</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="css">
+                    <label for="css">CSS News</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="javascript">
+                    <label for="javascript">JavaScript News</label>
+                </div>
+
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Newsletter Format</legend>
+
+                <div>
+                    <input type="radio" id="html">
+                    <label for="html">HTML</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="text">
+                    <label for="text">Plain Text</label>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Other Topics you'd like to hear about</legend>
+
+                <textarea name="info" id="info" cols="30" rows="6"></textarea>
+                <button type="submit">Sign Up</button>
+
+            </fieldset>
+        </form>
+    </section>
+
+    <footer>
+        <p>Copyright The Code Review</p>
+    </footer>
+
+</body>
+
+</html>

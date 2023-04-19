@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700;900&family=Roboto:wght@100;400&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: "Merriweather", serif;
+}
+header {
+  text-align: center;
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+header h1 {
+  font-size: 30px;
+}
+
+.container {
+  padding: 10px;
+}
+.container h2 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.container p {
+  text-align: center;
+  font-size: 15px;
+  color: gray;
+  padding: 10px 0;
+}
+.line1 {
+  border: 2px solid;
+  margin: 5px 0;
+}
+.line2 {
+  border: 1px solid;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+  color: grey;
+}
+fieldset legend {
+  padding: 15px 0;
+  font-size: 15px;
+}
+.fieldset1 legend {
+  font-weight: 700;
+  font-size: 20px;
+  color: black;
+}
+label {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+input {
+  text-align: left;
+  margin-bottom: 20px;
+  border: none;
+  padding: 10px;
+  background-color: #e0e0e0;
+  color: gray;
+  outline: none;
+}
+select {
+  text-align: left;
+  margin-bottom: 20px;
+  border: none;
+  padding: 10px;
+  background-color: #e0e0e0;
+}
+input::placeholder {
+  text-align: right;
+  text-transform: capitalize;
+  font-style: italic;
+  font-size: 10px;
+}
+
+#zipcode {
+  width: 30%;
+}
+.container form hr {
+  border: 1px solid;
+}
+.container form h2 {
+  text-align: left;
+  padding-top: 20px;
+}
+
+textarea {
+  border: none;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
+button {
+  margin-top: 2rem;
+  padding: 15px;
+  color: white;
+  background-color: #34eba8;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+input:focus {
+  border: 3px solid rgb(26, 26, 84);
+  transition: 0.2s;
+  border-radius: 5px;
+}
+footer p {
+  text-align: center;
+  font-style: italic;
+  color: grey;
+  padding-bottom: 1rem;
+}
+br {
+  display: none;
+}
+
+input[type="checkbox"]:checked + label::after {
+  background-color: blue;
+}
+.select-wrapper {
+  display: contents;
+  position: relative;
+  vertical-align: middle;
+}
+
+.select-wrapper::before {
+  content: "Choose state";
+  position: relative;
+  z-index: 1;
+  top: 65px;
+  left: 10px;
+}
+.select-wrapper::after {
+  content: url(/icons/sort-solid.svg);
+  position: relative;
+  left: 300px;
+  bottom: 45px;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  padding: 9px;
+  border: 1px solid red;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 50%;
+    display: block;
+    margin: auto;
+  }
+  .fieldset1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .fieldset1 input {
+    width: 70%;
+    float: right;
+  }
+  select {
+    width: 70%;
+    float: right;
+  }
+  .fieldset1 label {
+    float: left;
+    width: 30%;
+  }
+  br {
+    display: block;
+  }
+}
