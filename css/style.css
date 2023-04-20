@@ -44,6 +44,7 @@ fieldset {
   border: none;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   margin: 15px 0;
   color: grey;
 }
@@ -145,8 +146,9 @@ input[type="checkbox"]:checked + label::after {
 .select-wrapper::after {
   content: url(/icons/sort-solid.svg);
   position: relative;
-  left: 300px;
   bottom: 45px;
+  text-align: right;
+  padding: 0 5px;
 }
 select {
   -webkit-appearance: none;
@@ -182,5 +184,26 @@ select {
   }
   br {
     display: block;
+  }
+  .select-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+  }
+  .select-wrapper::before {
+    content: "Choose state";
+    position: absolute;
+    top: 9px;
+    left: 145px;
+    /* display: none; */
+  }
+  .select-wrapper::after {
+    content: url(/icons/sort-solid.svg);
+    position: relative;
+    text-align: right;
+    padding: 0 5px;
+    top: 8px;
+    right: 24px;
   }
 }
