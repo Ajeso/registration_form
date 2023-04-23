@@ -159,6 +159,7 @@ select {
   appearance: none;
   position: relative;
   padding: 9px;
+  border: none;
   background-color: #e0e0e0;
 }
 
