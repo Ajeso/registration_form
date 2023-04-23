@@ -98,6 +98,7 @@ textarea {
   border: none;
   background-color: #e0e0e0;
   border-radius: 5px;
+  outline: none;
 }
 button {
   margin-top: 2rem;
