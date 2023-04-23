@@ -6,7 +6,7 @@ It entails creating a mobile and desktop responsive registration form. What I le
 
 ## Screenshot
 
-![Screenshot](https://github.com/Ajeso/registration_form/issues/new)
+![Screenshot](/registration-form.png)
 
 ## Instructions
 
