@@ -203,7 +203,6 @@ select {
   .fieldset1 label {
     float: left;
     width: 30%;
-    font-size: 15px;
   }
   br {
     display: block;
