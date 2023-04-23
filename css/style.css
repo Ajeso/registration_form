@@ -84,7 +84,7 @@ input::placeholder {
 }
 
 #zipcode {
-  width: 30%;
+  width: 50%;
 }
 .container form hr {
   border: 1px solid;
@@ -120,6 +120,16 @@ input:focus {
   -o-transition: background-color 2s ease-out;
   transition: background-color 2s ease-out;
 }
+textarea:focus {
+  border: 3px solid rgb(26, 26, 84);
+  transition: border 0.2s ease-in-out;
+  border-radius: 5px;
+  background-color: white;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
 footer p {
   text-align: center;
   font-style: italic;
@@ -138,14 +148,6 @@ input[type="checkbox"]:checked + label::after {
   position: relative;
   vertical-align: middle;
 }
-
-.select-wrapper::before {
-  content: "Choose state";
-  position: relative;
-  z-index: 1;
-  top: 65px;
-  left: 10px;
-}
 .select-wrapper::after {
   content: url(/icons/sort-solid.svg);
   position: relative;
@@ -163,7 +165,7 @@ select {
   background-color: #e0e0e0;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .container {
     width: 50%;
     display: block;
@@ -196,10 +198,8 @@ select {
     width: 100%;
     position: relative;
   }
-  .select-wrapper::before {
-    content: "Choose state";
-    position: absolute;
-    top: 9px;
-    left: 145px;
+
+  #zipcode {
+    width: 25%;
   }
 }
