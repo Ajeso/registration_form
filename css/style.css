@@ -5,6 +5,7 @@
 }
 body {
   font-family: "Merriweather", serif;
+  background-color: rgb(246, 250, 253);
 }
 header {
   text-align: center;
@@ -71,13 +72,10 @@ input {
   color: gray;
   outline: none;
 }
-select {
-  text-align: left;
-  margin-bottom: 20px;
-  border: none;
-  padding: 10px;
-  background-color: #e0e0e0;
+.hidden {
+  display: none;
 }
+
 input::placeholder {
   text-align: right;
   text-transform: capitalize;
@@ -114,8 +112,13 @@ button {
 
 input:focus {
   border: 3px solid rgb(26, 26, 84);
-  transition: 0.2s;
+  transition: border 0.2s ease-in-out;
   border-radius: 5px;
+  background-color: white;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
 }
 footer p {
   text-align: center;
@@ -146,7 +149,7 @@ input[type="checkbox"]:checked + label::after {
 .select-wrapper::after {
   content: url(/icons/sort-solid.svg);
   position: relative;
-  bottom: 45px;
+  bottom: 28px;
   text-align: right;
   padding: 0 5px;
 }
@@ -157,6 +160,7 @@ select {
   position: relative;
   padding: 9px;
   border: 1px solid red;
+  background-color: #e0e0e0;
 }
 
 @media (min-width: 1024px) {
@@ -187,7 +191,8 @@ select {
   }
   .select-wrapper {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     width: 100%;
     position: relative;
   }
@@ -196,14 +201,5 @@ select {
     position: absolute;
     top: 9px;
     left: 145px;
-    /* display: none; */
-  }
-  .select-wrapper::after {
-    content: url(/icons/sort-solid.svg);
-    position: relative;
-    text-align: right;
-    padding: 0 5px;
-    top: 8px;
-    right: 24px;
   }
 }
