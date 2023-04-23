@@ -131,6 +131,16 @@ textarea:focus {
   -o-transition: background-color 2s ease-out;
   transition: background-color 2s ease-out;
 }
+select:focus {
+  border: 3px solid rgb(26, 26, 84);
+  transition: border 0.2s ease-in-out;
+  border-radius: 5px;
+  background-color: white;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
 footer p {
   text-align: center;
   font-style: italic;
@@ -163,6 +173,7 @@ select {
   position: relative;
   padding: 9px;
   border: none;
+  outline: none;
   background-color: #e0e0e0;
 }
 
@@ -171,6 +182,7 @@ select {
     width: 50%;
     display: block;
     margin: auto;
+    font-size: 15px;
   }
   .fieldset1 {
     display: flex;
@@ -180,14 +192,18 @@ select {
   .fieldset1 input {
     width: 70%;
     float: right;
+    padding: 16px;
   }
   select {
     width: 70%;
     float: right;
+    opacity: 60%;
+    padding: 16px;
   }
   .fieldset1 label {
     float: left;
     width: 30%;
+    font-size: 15px;
   }
   br {
     display: block;
