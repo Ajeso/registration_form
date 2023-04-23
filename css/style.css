@@ -146,6 +146,7 @@ footer p {
   font-style: italic;
   color: grey;
   padding-bottom: 1rem;
+  margin-bottom: 5rem;
 }
 br {
   display: none;
