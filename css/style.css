@@ -142,11 +142,10 @@ select:focus {
   transition: background-color 2s ease-out;
 }
 footer p {
+  background-color: black;
   text-align: center;
   font-style: italic;
   color: grey;
-  padding-bottom: 1rem;
-  margin-bottom: 5rem;
 }
 br {
   display: none;
@@ -217,5 +216,8 @@ select {
 
   #zipcode {
     width: 25%;
+  }
+  footer p {
+    padding: 25px;
   }
 }
